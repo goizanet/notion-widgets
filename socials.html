@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      font-family: "Poppins", sans-serif;
+      place-items: center;
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+    }
+
+    .icon {
+      font-size: 2em;
+      color: #7a7a7a
+    }
+
+    .instagram:hover, .twitter:hover {
+      color: #8C1C13;
+    }
+    
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+    <div class="wrapper">
+      <div id="instagram" onclick="navigate(this.id)" class="social">
+        <span class="icon instagram"><i class="fab fa-instagram"></i></span>
+      </div>
+      <div id="twitter" onclick="navigate(this.id)" class="social">
+        <span class="icon twitter"><i class="fab fa-twitter"></i></span>
+      </div>
+    </div>
+
+    <script>
+      function navigate(id) {
+        else if (id === "instagram") {
+          window.open("https://www.instagram.com/esaldiak_oihu/", '_blank').focus(); 
+        }
+        else if (id === "twitter") {
+          window.open("https://twitter.com/esaldiak_oihu", '_blank').focus(); 
+        }
+      }
+
+    </script>
+
+  </body>
+
+</html>
